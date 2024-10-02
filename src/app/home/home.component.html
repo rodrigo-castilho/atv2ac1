@@ -1,0 +1,7 @@
+<div class="container mt-3">
+    <button class="btn btn-primary" (click)="toggleBanner()">Mostrar/Ocultar Banner</button>
+  
+    <div *ngIf="showBanner" class="alert alert-info mt-3" role="alert">
+      Promoção: 30% de desconto em todos os produtos!
+    </div>
+  </div>
