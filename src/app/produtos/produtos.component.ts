@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ProdutosComponent {
   produtos = [
-    { nome: 'Produto 1', preco: 100, descricao: 'Descrição do Produto 1', emEstoque: false },
-    { nome: 'Produto 2', preco: 200, descricao: 'Descrição do Produto 2', emEstoque: false },
-    { nome: 'Produto 3', preco: 300, descricao: 'Descrição do Produto 3', emEstoque: false }
+    { nome: 'Teclado com fio USB Logitech K120', preco: 77, descricao: 'Resistente à Respingos, Barra de Espaço Curva, Compatível com PC e Notebook, Layout ABNT2', emEstoque: false },
+    { nome: 'HyperX Pulsefire Haste 2 Mini', preco: 486, descricao: 'Mouse para jogos sem fio para PC, compacto, leve, Bluetooth, 2,4 GHz, preto', emEstoque: false },
+    { nome: 'Monitor Gamer Curvo 30', preco: 1700, descricao: 'Ultrawide 200hz 1ms 2560x1080 Haiz Inteligente Adaptative Sync HDMI/DP HZ-30', emEstoque: false }
   ];
 
-  todosForaDeEstoque(): boolean {
+  foraDeEstoque(): boolean {
     return this.produtos.length > 0 && this.produtos.every(produto => !produto.emEstoque);
   }
 }
